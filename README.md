@@ -38,7 +38,7 @@ The repository name is `comp163-assignment-6`, initialized with this README, and
 1.  **Save the file**: Ensure your Python code is saved as `rpaulinopayano_assignment_6.py` in the repository root.
 2.  **Execute**: Open your terminal or command prompt and run the program using the command:
     ```bash
-    python [username]_assignment_6.py
+    python rpaulinopayano_assignment_6.py
     ```
 3.  **Input Data**: Enter contact information when prompted, using the format: `name|phone|email|address`.
 4.  **Finish**: Type `DONE` or press the Enter key on an empty line to signal the end of input and generate the formatted directory.
