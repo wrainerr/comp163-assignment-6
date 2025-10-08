@@ -1,7 +1,3 @@
-# rpaulinopayano_assignment_6.py 
-# Student: Rayner Paulino-Payano
-# Assignment 6: Contact Information Formatter 
-# Demonstrates mastery of string methods for data cleaning and formatting
 print("enter contact information (format: name|phone|email|address): ")
 
 cleaned_contacts_list = []
@@ -48,6 +44,9 @@ while True:
         else:
             formatted_phone = f"invalid ({digits_only})"
 
+        # email cleaning using lower and strip
+        email = separated_contact_info[2].strip().lower()
+
         # address cleaning
         raw_address = separated_contact_info[3].strip()
         # use title and split
@@ -61,8 +60,19 @@ while True:
                 final_address.append(part.upper())
             else:
                 final_address.append(part)
-        # reassemble address using join.
+        # reassemble address using join
         address = " ".join(final_address)
+        
+        # store cleaned contact
+        cleaned_contacts_list.append({
+            'count': contact_count,
+            'full_name': name_full,
+            'first_name': first_name,
+            'last_name': last_name,
+            'phone': formatted_phone,
+            'email': email,
+            'address': address
+        })
 
 # start printing output sections
 if cleaned_contacts_list:
