@@ -35,7 +35,7 @@ The repository name is `comp163-assignment-6`, initialized with this README, and
 
 ### How to Run
 
-1.  **Save the file**: Ensure your Python code is saved as `[username]_assignment_6.py` in the repository root.
+1.  **Save the file**: Ensure your Python code is saved as `rpaulinopayano_assignment_6.py` in the repository root.
 2.  **Execute**: Open your terminal or command prompt and run the program using the command:
     ```bash
     python [username]_assignment_6.py
