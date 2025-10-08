@@ -1,3 +1,7 @@
+# rpaulinopayano_assignment_6.py 
+# Student: Rayner Paulino-Payano
+# Assignment 6: Contact Information Formatter 
+# Demonstrates mastery of string methods for data cleaning and formatting
 print("enter contact information (format: name|phone|email|address): ")
 
 cleaned_contacts_list = []
