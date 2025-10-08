@@ -34,6 +34,20 @@ while True:
             first_name = name_parts[0] if name_parts else "n/a"
             last_name = "n/a"
 
+        # phone number cleaning
+        phone = separated_contact_info[1]
+        digits_only = ""
+        # extract digits using isdigit
+        for char in phone:
+            if char.isdigit():
+                digits_only += char
+        
+        # format phone number
+        if len(digits_only) == 10:
+            formatted_phone = f"({digits_only[0:3]}) {digits_only[3:6]}-{digits_only[6:10]}"
+        else:
+            formatted_phone = f"invalid ({digits_only})"
+
         # address cleaning
         raw_address = separated_contact_info[3].strip()
         # use title and split
