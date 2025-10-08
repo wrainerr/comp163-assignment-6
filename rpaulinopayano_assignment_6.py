@@ -61,7 +61,7 @@ while True:
                 final_address.append(part.upper())
             else:
                 final_address.append(part)
-        # reassemble address using join
+        # reassemble address using join.
         address = " ".join(final_address)
 
 # start printing output sections
